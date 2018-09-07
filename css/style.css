@@ -1,0 +1,305 @@
+                    /* -- GLOBAL -- */
+
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family: "noto serif JP", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: serif;
+    font-size: 30px;
+}
+
+                /* Billeder (adskillelser) */
+
+.pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
+  position:relative;
+  opacity:0.9;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:scroll;
+}
+
+.pimg1{
+  background-image:url('../img/JohnRiddellv.3.png');
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url('../img/Trappe.png');
+  min-height: 100%;
+}
+
+.pimg3{
+  background-image:url('../img/trommer.png');
+  min-height: 100%;
+}
+
+.pimg4{
+  background-image:url('../img/lydfil1kontor.png');
+  min-height: 100%;
+}
+
+.pimg5{
+  background-image:url('../img/kand.png');
+    background-position: bottom;
+  min-height: 50%;
+}
+
+/* Billedtekst til "lydbilleder" */
+
+.hjemmestudie{
+    margin-bottom: 10%;
+}
+
+.billedtekst{
+    margin: 0 0 10% 0;
+}
+
+                /* -- Tekstområder -- */
+
+/* Overordnet */
+
+.section{
+  text-align:left;
+  padding:5% ;
+}
+
+.section h2{
+    text-align: center;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+/* -- Tekst på siden -- */
+
+.flexp{
+    text-align: justify;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+    background-color:#111;
+    color:#fff;
+    padding:20px;
+    border: 2px solid;
+    font-size: 15px;
+}
+
+.ptext .border.trans{
+    background-color:#fff;
+    color: #000;
+    opacity: 0.7;
+    font-size: 20px;
+    padding: 2.5%;
+}
+
+                /* -- Videoer -- */
+
+#kontor{
+    width: 100%;
+    margin: 0; 
+    height: auto;
+    background: #282e34;
+    padding: 0;
+}
+
+#trommespil{
+    width: 100%;
+    margin: 0; 
+    height: auto;
+    background: #282e34;
+    padding: 0;
+}
+
+/* Timelapse */
+
+#containerp4{
+    max-width: 100%;
+    height: auto;
+}
+
+.flexfooter{
+    width: 100%;
+    margin: 5% 0;
+    padding: 0;
+}
+
+.flexlinks{
+   width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #ddd;
+}
+
+.flexlinks:hover{
+    text-decoration: underline;
+}
+
+.footerdiv{
+    margin:0;
+    padding:2%;
+}
+
+/* Lydklip på billeder */
+
+.flexlyd{
+    max-width: 100%;
+    margin-bottom: 5%;
+    border: 2px #fff solid;
+    border-radius: 5px;
+}
+
+/* -- MEDIA -- */
+
+@media(min-width:768px){
+    
+  .pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
+    background-attachment:fixed;
+  }
+    
+    .ptext .border{
+        font-size: 30px;
+    }
+    
+    .ptext .border.trans{
+        font-size: 25px;
+    }
+    
+/* Flex på tekst */
+
+    #containerp{
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+    #containerp1{
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+    #containerp2{
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+    #containerp3{
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+    #containerp4{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2% 0;
+    justify-content: center;
+}
+ 
+    .flexh{
+    width: 100%;
+}
+
+    .flexp{
+    width: 46%;
+    padding: 0 2%;
+    text-align: justify;
+}
+    
+    .flexlyd{
+        max-width: 100%;
+    }
+    
+    .hjemmestudie{
+    margin: 0 0 4% 0;
+}
+    
+        /* Video del */
+    
+    #kontor{
+    width: 75%;
+    margin: 0 12.5%;
+    height: auto;
+    background: #282e34;
+    padding: 0;
+}
+    
+    #trommespil{
+    width: 75%;
+    margin: 5% 12.5% 0 12.5%;
+    height: auto;
+    background: #282e34;
+    padding: 0;
+}
+
+    .videodel2{
+        padding: 0;
+    }
+    
+    .videodel1{
+        padding-top: 0;
+        padding-bottom: 10%;
+
+    }
+    
+    img.flexlyd{
+        opacity: .5;
+    }
+    
+    img.flexlyd:hover{
+        opacity: 1;
+        transition: all .1s ease-in;
+    }
+    
+    /* Footer */ 
+    
+    /* Videor */
+    
+    .flexfooter{
+        width: 100%;
+    }
+    
+    .vidogtekst{
+        width: 40%;
+        margin: 0 2.5%;
+    }
+    
+    /* Links */
+    
+    .footerdiv{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    }
+    
+    .flexlinks{
+    max-width: 30%;
+    margin: 1% 0;
+    }
+       
+}
